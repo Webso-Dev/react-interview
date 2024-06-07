@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
 
-function App() {
+const COMMENTS_URL = "https://jsonplaceholder.typicode.com/comments";
+const POSTS_URL = "https://jsonplaceholder.typicode.com/posts";
+
+const fetchComments = (postId) => {
+  return fetch(`${COMMENTS_URL}?postId=${postId}&limit=10`).then((response) =>
+    response.json()
+  );
+};
+
+const fetchPosts = () => {
+  return fetch(POSTS_URL).then((response) => response.json());
+};
+
+export default function App() {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await fetchPosts();
+      setPosts(data);
+    };
+    fetchData();
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="md:container">
+      {posts.map((post) => (
+        <div className="row-auto border-2 border-sky-500 rounded p-3 m-3">
+          Something has to be done!
+        </div>
+      ))}
     </div>
   );
 }
 
-export default App;
+// https://jsonplaceholder.typicode.com/comments
+// https://jsonplaceholder.typicode.com/posts
