@@ -22,7 +22,7 @@ Like & Dislike functionality.
 User can't like and dislike the post at the same time. Like negates dislike and vice versa. 
 
 Deisgn: 
-![Step 3](image-2.png)
+![Step 4](image-3.png)
 
 
 # Step 4
