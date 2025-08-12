@@ -1,13 +1,15 @@
 # Step 1 
 
-Render all posts and a show comments button. 
+Render all posts. Create "Show comments" button at the end of each post. 
 
 Design:
 ![Step 1](image.png)
 
 # Step 2 
 
-"Show comments" functionality. Renders all comments under the post.
+"Show comments" functionality. 
+
+Renders all comments under the post.
 
 Design:
 ![Step 2](image-1.png)
@@ -15,9 +17,9 @@ Design:
 
 # Step 3 
 
-Like & Dislike functionality 
+Like & Dislike functionality.
 
-When like is pressed dislike has to be reseted for the user, and vice versa for the dislike button.
+User can't like and dislike the post at the same time. Like negates dislike and vice versa. 
 
 Deisgn: 
 ![Step 3](image-2.png)
@@ -25,12 +27,14 @@ Deisgn:
 
 # Step 4
 
-Limit amounnt of comments shown by default to 2. Load more comments by pressing "Load more comments" by 2 comments.
+Limit the amount of comments shown. Default about should be 2. 
+
+Load comments functionality. User can load more comments by pressing "Load more comments".
 
 ![Step 4](image-3.png)
 
 # Step 5 
 
-Reply to a comment. Nest comment under the other comment.
+Reply to a comment. Nest comment under the parent comment. 
 
 No deisgn. Go nuts, bonus step.
