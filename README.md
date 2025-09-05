@@ -52,6 +52,20 @@ We conduct this interview live to gain insights into:
 
 The following tasks should be completed progressively. Each step builds upon the previous one, creating a fully functional social media post component.
 
+## Step 0 
+
+Let's get ready to hack!
+
+Clone this repository or create new React app skeleton with your favorite tooling. 
+
+If you decide to create a new React app skeleton these API endpoints are all you need to get started. 
+
+```typescript
+const BASE = "https://jsonplaceholder.typicode.com";
+const COMMENTS_ENDPOINT = `${BASE}/comments`;
+const POSTS_ENDPOINT = `${BASE}/posts`;
+``` 
+
 ## Step 1 
 
 Render all posts. Create "Show comments" button at the end of each post. 
